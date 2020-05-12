@@ -5,7 +5,7 @@
 # provider for Jenkins you will want to register it as a [GitHub application](https://github.com/settings/applications/new)
 # and set this to a GitHub username and access token.
 jenkins::slave::ui_user: 'admin'
-jenkins::slave::ui_pass: 'changeme'
+jenkins::slave::ui_pass: 'admin'
 # The version of the swarm client plugin should be the same between the jenkins master and agents on all hosts.
 # Note that versions above 3.0 require use of a modified version of the docker puppet module
 jenkins::swarm_version: &jenkins_swarm_version '3.14'
@@ -14,11 +14,11 @@ jenkins::slave::version: *jenkins_swarm_version
 # This should be unchanged so that the masterurl always uses the hosts entry to reach master.
 jenkins::slave::masterurl: 'http://master:8080'
 
-master::ip: 172.30.1.145
-repo::ip: 172.30.1.69
+master::ip: 192.168.56.104
+repo::ip: 192.168.56.103
 
 # change this to match the timezone that this buildfarm is located in.
-timezone: 'America/Los_Angeles'
+timezone: 'Europe/London'
 
 # SSH keys to be added to each host.
 # The jenkins-agent public key is one you'll want to generate specifically for your deployment.
@@ -45,8 +45,8 @@ ssh_keys:
   #
   # Use the comment as the key name
   'jenkins-agent@my-buildfarm':
-      type: REPLACE_WITH_AGENT_SSH_KEY_TYPE
-      key: REPLACE_WITH_AGENT_SSH_KEY
+      type: ssh-rsa
+      key: AAAAB3NzaC1yc2EAAAADAQABAAACAQDHaUio+VBqVig0FCi8STEAUZW1hvOZsSdIHOPEKukbwncZBXaMkQnrZmdU99+BfJ52GtEmc7L7kyVuwAkp9hrZkr6EIxEzy8VVK1asvuX8OLdrNh8qN2loxKoNu93W+orROoS2AOtZYYe5eQJ56IxNmoz/3xrSDKiScRwmpX6RYbp2v6EvU74Z8ITMSDDRLCgD0K0KhW3rZp1szby4l4hQJw8CSxJHJ793oZCAZNkrWfBHTibtj3RLi4YguBRNWj0DlHnoI+66p4wer0dlzvaxRk2ImOF4+2ZBqS+PxYx9ROay8R6bLaZ/s9d1BwhHY1cHzK7TFPotPGvhaboHvQnGZe4YQj9Y9u901PROx1ulHEOqyOA+oSA5r5inv/rCaB+fpz+rDRwQyPCpd4hezBRNPEuqi0XWn5LT3ZHAh7xyCGzvSHPiE2Y607Z+hH4Ap/EYx+3EiHskc2+xDYFZp+ZXlYVVmeu1fAKyyu7A1U7NA2ARvmuVE/8dlCF0IzEUWHQ8PMlxFi/fg3ZKughKpkvc9a7VFXzaZCs4z45Q/tOWZgiUxPN8GdaKjPNWxMojI6la0ry+iqVj7afL7LJ+ACvFlvF2XNY58FeV7K/aHBFtg9ErsQl8j12M5mDN/ad85Q3zGGMZPXZas+ANl3jbCaG1Mic/cLbtyDAXzr8lRt7m1Q==
       user: jenkins-agent
       require: User[jenkins-agent]
     ## If you wish to add keys for administrative access you can do so as well.

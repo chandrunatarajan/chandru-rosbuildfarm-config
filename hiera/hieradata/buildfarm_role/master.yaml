@@ -30,34 +30,57 @@ jenkins::slave::slave_mode: exclusive
 jenkins::slave::slave_name: agent_on_master
 
 jenkins::private_ssh_key: |
-    -----BEGIN RSA PRIVATE KEY-----
-    MIIEpQIBAAKCAQEAtjTmkbHWaqk6wsDUe+wECKsAD2JA34i9Truz4v6mlvUu1FNG
-    NSgEOpFoYCXPUbToW2Shh2xU6ki0+Nt+U5Jj75WW1dmyvGVYgZqkN6/LwzIQv/qf
-    RHPUj/LI7+iXCBFjsuc1z5wdzpxx1l5r2T+O64yWNJe+he9X2bd75b8o8+yK4pFC
-    5rinMqxPs7pZm0k7XxmYcUET8WQzv0Yjnpgj7GKObv61DI1h/gpBCNLMEJTOkCL4
-    1nX2LTcEE/cqOdzFxcuY6HYVuGDjp3ChOETDiPS5ruoxNBpnZkhL+POkeKLeolmp
-    8doZP+Os5Zl9ZEihljm0XR+ex/8SAMb8Pj4k3QIDAQABAoIBAQCKBgbHRS0EvU86
-    6nHLsdzYaBjyjl5QNrgY5U1+XaL6ZZ7kznQ3nimd6Dpl4x5qaZ0+ZjuKZ4DnvM4C
-    WdsXGaTEf8+0DWY9GpRyER/m4y96nPldRE/Tvd6+cI7QVaPbQ7j/c/AqZbuaoJ4H
-    Yp1WA7STMHs0OeLkeItW7IxZXHZ8V2LhZeCCGy3UYlHYeSQ5K0NE/Ry3MH1iySIs
-    V0XvGgrNaT+Os1DXBtKCUQC8PaT1z9qq53qAceOhj8h1lrr/NubCgAyJHfL57ry1
-    KkeEyp+yTePqyIX/tBwN8BKLdVvCFp3VnxRWE3E0qvXKtVm8MRHR3C9mSxQrKMsz
-    PdjEhvkBAoGBAODDHrpv/Q2xglvHcegCZNte9WDNsadJJcurWf7KuBg79gbXK8Sw
-    PKMSMIwwQlcY3x4ciav3rde5INZBgpdN1BqGtE5EHt/rqhkBrOraJP4KlgqQnVdn
-    SBAFvkrr7RRiV2U4icD1ZRL0mHNawSlcPTZ9oP++U+AaCAnJVTE2PDEdAoGBAM+H
-    rzTMQG3bKAND1P5xfjm0zSjnqEwGVXOgTcHRmeqOOu2pzkT2n6TzrkBbWXc78rhv
-    a9UTz2+QjIszhb9goBkfGF5+enMwksOikUWjfCZPNFeLmPQD34Hko/hmh4n1b1lm
-    XOG8M6R3q7kmS6dRdyfG4TDR6oMQDzRWHFJ7tTbBAoGASkw1vCuI2x3ymaQ0Yx1n
-    eZzKQFW+hC4J8GmUNkWM1XX8vgYi0cHwSXeZ1L2fMGtoVevZFp+pN8ZatHizUpDH
-    rH0a3URncF3WvK1xG7FAyTl2n8duO5ZInANKBDo5BKP9f9hQsRhtcPap7nfxolp7
-    YaflsKSZ1VrFjXagUsQ64YECgYEAhDzRR7Ne2qFrPalbb0aiR+MNV6NFeiwPBz5+
-    TaJhkTRQGGC7LvZ3g4RC5H9Q4skwQJW/AGc/JrfU1l5eOzQ2z8sgnBW7sOqimkZc
-    iyNBWKffkmlBbTuKkBpA4WdztlTOPwka5jwmLAaVRcVBL7yZUJ9JnvIjnJ//EDpO
-    kcCCGAECgYEA1wiLyDJ/5OuKFRyE5Y1MJJJBg3M49YWxZl3RtVzaTHl3WBUbL52I
-    SRbOij6xH8URigzwKGV+KubshUC5P3TQxc6AkUpIRM6iWBpz1yzb8o5PdrTQ4VVp
-    QhbS+sZ+JcyNMAHEOkHkEN/eS930FnCyeLQwYEwJAkiYl7vkVuXXzAA=
-    -----END RSA PRIVATE KEY-----
-
+ -----BEGIN RSA PRIVATE KEY-----
+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
+-----END RSA PRIVATE KEY-----
 # Optional customization urls for uploading docs.
 # These should match the credentials in the ros_buildfarm_config doc-build.yaml.
 # upload::docs::host: repo
@@ -70,8 +93,8 @@ jenkins::private_ssh_key: |
 #
 # A GitHub username and token are required.
 # TODO (Steven!) what permissions on the token?
-jenkins::github::username: ros-pull-request-builder
-jenkins::github::token: somegithubtoken
+jenkins::github::username: chandrunatarajan
+jenkins::github::token: c5beb7751d718a548a1da77102634ba0a9a231a3
 #
 # default value of https://api.github.com can be overridden for GitHub Enterprise.
 # jenkins::github::api_url: 'https://api.github.com'
