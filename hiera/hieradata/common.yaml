@@ -5,7 +5,7 @@
 # provider for Jenkins you will want to register it as a [GitHub application](https://github.com/settings/applications/new)
 # and set this to a GitHub username and access token.
 jenkins::slave::ui_user: 'admin'
-jenkins::slave::ui_pass: 'changeme'
+jenkins::slave::ui_pass: 'admin'
 # The version of the swarm client plugin should be the same between the jenkins master and agents on all hosts.
 # Note that versions above 3.0 require use of a modified version of the docker puppet module
 jenkins::swarm_version: &jenkins_swarm_version '3.14'
